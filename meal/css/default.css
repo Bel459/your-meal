@@ -1,0 +1,92 @@
+html {
+    --conteiner: 300px;
+    --padding-conteiner: 10px;
+    box-sizing: border-box;
+    /* position: relative;
+    overflow-x: hidden; */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: nunito, sans-serif;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    color: #000000;
+}
+
+.img, svg {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, p, figure {
+    margin: 0;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+}
+
+.visual-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.conteiner {
+    max-width: calc(var(--conteiner) + (var(--padding-conteiner)*2));
+    padding: 0 var(--padding-conteiner);
+    margin: 0 auto;
+}
+
+@media (min-width: 480px) {
+    html {
+        --conteiner: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        --conteiner: 640px;
+        --padding-conteiner: 64px;
+    }
+}
+
+@media (min-width: 1024px) {
+    html {
+        --conteiner: 690px;
+        padding: 32px;
+    }
+
+}
+
+@media (min-width: 1036px) {
+    html {
+        --conteiner: 1290px;
+    }
+}

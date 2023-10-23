@@ -1,0 +1,29 @@
+.navigation {
+	margin-bottom: 30px;
+}
+
+.navigation__conteiner {
+	padding: 0;
+	min-width: 100vw;
+}
+
+.navigaion__list {
+	padding: 0 calc(100vw /2 - var(--conteiner) /2);
+	display: flex;
+	gap: 8px;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.navigation__button {
+	background-color: #ffffff;
+	border-radius: 50px;
+	padding: 7px 8px;
+	font-size: 12px;
+	line-height: 16px;
+	white-space: nowrap;
+}
+
+.navigation__button_active {
+	background-color: #FFAB08;
+}
