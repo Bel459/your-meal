@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +17,14 @@
     <link rel="preload" href="/fonts/nunito-v26-cyrillic_latin-regular.woff2" as="font" crossorigin>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <header class="header">
-        <div class="conteiner header__conteiner">
+        <div class="container header__container">
             <svg class="header__logo" viewBox="0 0 199 44" role="img" aria-label="logo Your meal">
                 <use href="icon/img/sprite.svg#logo">
             </svg>
-            <div class="header__title-conteiner">
+            <div class="header__title-container">
                 <h1 class="header__title">
                     <span class="header__title-text">Только самые</span>
                     <span class="header__title-text header__title-text_red">сочные бургеры</span>
@@ -33,7 +35,7 @@
     </header>
     <main>
         <nav class="navigation">
-            <div class="continer navigation__conteiner">
+            <div class="continer navigation__container">
                 <ul class="navigaion__list">
                     <li class="navigaion__item">
                         <button type="button"
@@ -68,29 +70,43 @@
         </nav>
 
         <section classs="catalog">
-            <div class="catalog__order order">
-                <section class="order__wrapper">
-                    <div class="order__wrap-title">
-                        <h2 class="order__tittle">Корзина</h2>
-                        <span class="order__count">11</span>
-                    </div>
-                    <div class="order__wrap_listt">
-                        <ul class="order__list">
-
-                        </ul>
-                        <div class="order__ttotal">
-                            <p>Итого</p>
-                            <p>Итого</p>
+            <div class="container">
+                <div class="catalog__order order order_open">
+                    <section class="order__wrapper">
+                        <div class="order__wrap-title" tabindex="0" role="button">
+                            <h2 class="order__title">Корзина</h2>
+                            <span class="order__count">11</span>
                         </div>
+                        <div class="order__wrap_list">
+                            <ul class="order__list">
+
+                            </ul>
+                            <div class="order__total">
+                                <p>Итого</p>
+                                <p>
+                                    <span class="order__total-amount">99</span>
+                                    <span class="currency">₴</span>
+                                </p>
+                            </div>
+                            <button class="order__submit">Оформить заказ</button>
+                            <div class="order__wrap-apeal">
+                                <p class="order__apeal">Бесплатная доставка</p>
+                                <button class="order__close">Свернуть</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="catalog__wrapper">
+                    <h2 class="catalog__title">
+                        Бургеры
+                    </h2>
+                    <div class="catalog__wrap_list">
+                        <ul class="catalog__list"></ul>
                     </div>
-                </section>
-            </div>
-            <div class="catalog__wrapper">
-                <h2 class="catalog__tittle">
-                    Бургеры
-                </h2>
+                </div>
             </div>
         </section>
     </main>
 </body>
+
 </html>
